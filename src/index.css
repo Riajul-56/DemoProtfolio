@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+.container {
+  margin: auto;
+}
+
+@theme {
+  --color-primary_bg: #000000;
+  --font-primary_fontn: "Montserrat";
+}
