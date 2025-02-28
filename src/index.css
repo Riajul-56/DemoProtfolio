@@ -5,6 +5,25 @@
 }
 
 @theme {
+  --color-primary_text: #e4e4e4;
   --color-primary_bg: #000000;
-  --font-primary_fontn: "Montserrat";
+
+  --font-primary_font: "Montserrat";
+}
+
+@layer components {
+  .afterLiear {
+    background: rgb(226, 163, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(226, 163, 0, 0) 100%,
+      rgba(226, 149, 0, 1) 100%
+    );
+  }
+  .navItem {
+    @apply relative text-[18px] font-normal text-primary_text;
+  }
+  .activeNavItem {
+    @apply text-primary_text after:content-[''] after:w-full after:h-1 after:absolute after:-bottom-3 after:left-0 after:bg-[#E29500] after:rounded-2xl hover:after:w-full;
+  }
 }
