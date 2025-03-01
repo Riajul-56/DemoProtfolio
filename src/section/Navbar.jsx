@@ -25,7 +25,7 @@ let menu = [
 
 const Navbar = () => {
   return (
-    <nav className="bg-primary_bg py-4">
+    <nav className="bg-[#2C2C2C] py-4">
       <Container>
         <Flex className="gap-[219px] items-center">
           <div>

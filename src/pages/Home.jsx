@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "../section/Navbar";
+import Banner from "../section/Banner";
 
 const Home = () => {
   return (
     <>
-    
+    <Banner/>
     </>
   );
 };

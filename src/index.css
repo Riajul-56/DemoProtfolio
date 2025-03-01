@@ -20,10 +20,18 @@
       rgba(226, 149, 0, 1) 100%
     );
   }
+  .background_first {
+    background: rgb(65, 65, 65);
+    background: linear-gradient(
+      0deg,
+      rgba(65, 65, 65, 0) 100%,
+      rgba(45, 45, 45, 1) 100%
+    );
+  }
   .navItem {
     @apply relative text-[18px] font-normal text-primary_text;
   }
   .activeNavItem {
-    @apply text-primary_text after:content-[''] after:w-full after:h-1 after:absolute after:-bottom-3 after:left-0 after:bg-[#E29500] after:rounded-2xl hover:after:w-full;
+    @apply text-primary_text after:content-[''] after:w-full after:h-1 after:absolute after:-bottom-3 after:left-0 after:bg-[#E29500] after:rounded-lg hover:after:w-full;
   }
 }

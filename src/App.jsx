@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import Rootlayout from "./layout/Rootlayout";
 import Navbar from "./section/Navbar";
+import Banner from "./section/Banner";
 const App = () => {
   return (
     // <Routes>
@@ -14,6 +15,7 @@ const App = () => {
     // </Routes>
     <>
       <Navbar />
+      <Banner/>
     </>
   );
 };
