@@ -3,6 +3,7 @@ import Container from "../components/Container";
 import Flex from "../components/Flex";
 import profile from "../assets/profile.png"
 import background_img from "../assets/profile_light.png"
+import { Link } from "react-router";
 
 const Banner = () => {
   return (
@@ -19,10 +20,16 @@ const Banner = () => {
               a year now. Do you need a website design, site layout, or maybe a
               turnkey website? Then contact me
             </p>
+            <Link className="py-[14px] px-[34px] bg-[#E29500] rounded-[6px] text-primary_bg font-bold text-[18px]">
+              Contact me
+            </Link>
           </div>
           <div className="relative ">
-            <img src={profile} className="z-50"/>
-            <img src={background_img} className="absolute top-0 right-0 w-[575px] h-[575px]"/>
+            <img src={profile} className="z-50" />
+            <img
+              src={background_img}
+              className="absolute top-0 right-0 w-[575px] h-[475px]"
+            />
           </div>
         </Flex>
       </Container>

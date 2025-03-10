@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
 .container {
   margin: auto;
 }
@@ -7,7 +16,6 @@
 @theme {
   --color-primary_text: #e4e4e4;
   --color-primary_bg: #000000;
-
   --font-primary_font: "Montserrat";
 }
 
@@ -17,7 +25,7 @@
     background: linear-gradient(
       0deg,
       rgba(226, 163, 0, 0) 100%,
-      rgba(226, 149, 0, 1) 100%
+      rgba(226, 149, 0, 1) 100%,
     );
   }
   .background_first {
@@ -25,7 +33,7 @@
     background: linear-gradient(
       0deg,
       rgba(65, 65, 65, 0) 100%,
-      rgba(45, 45, 45, 1) 100%
+      rgba(45, 45, 45, 1) 100%,
     );
   }
   .navItem {
